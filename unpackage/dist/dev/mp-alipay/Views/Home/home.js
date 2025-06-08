@@ -14,6 +14,12 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
       console.log(response);
       userStore.user = response.data.data;
     });
+    const develop = () => {
+      common_vendor.index.showToast({
+        title: "正在开发中",
+        icon: "exception"
+      });
+    };
     function jump(value) {
       if (value == "/Views/GreeChallenge/index/index") {
         if (userStore.user.id == "000000") {
@@ -117,7 +123,8 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
             a: item.img,
             b: common_vendor.t(item.title)
           };
-        })
+        }),
+        f: common_vendor.o(develop)
       };
     };
   }

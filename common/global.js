@@ -8,10 +8,10 @@ export const DonateImgUrl = 'https://carbon2.obs.cn-north-4.myhuaweicloud.com/ca
 export const MyImgUrl = 'https://carbon2.obs.cn-north-4.myhuaweicloud.com/carbon-life-static/my/'
 
 const local = 'http://localhost:9090'
-const domain = 'https://www.carboner.cn'
+const domain = 'https://www.chenxinzhi.top:3458'
 const ip = 'http://1.94.237.210:9090'
 
  
-export const DomainName = local
+export const DomainName = domain
 
 

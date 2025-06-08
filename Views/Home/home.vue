@@ -29,7 +29,7 @@
 			  </view>
         <view >
         	<view class="Essay" v-for="item in essay">
-        		<view class="essay">
+        		<view class="essay" @click="develop">
         		<image :src="item.img"></image>
         		<view>{{item.title}}</view>
         		</view>
@@ -52,6 +52,13 @@ import { DomainName } from '../../common/global';
 		console.log(response); 
 		userStore.user = response.data.data
 	})
+	
+	const develop = () => {
+		uni.showToast({
+			title: '正在开发中',
+			icon: 'exception'
+		})
+	}
 	
     function jump(value:any){ 
 		if(value == '/Views/GreeChallenge/index/index'){

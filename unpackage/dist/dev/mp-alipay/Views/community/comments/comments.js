@@ -21,6 +21,12 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
     const upvoteSytle = common_vendor.ref("");
     const isUpvoted = common_vendor.ref("");
     const upvoteCnt = common_vendor.ref(0);
+    const develop = () => {
+      common_vendor.index.showToast({
+        title: "正在开发中",
+        icon: "exception"
+      });
+    };
     common_vendor.onLoad((options) => {
       console.log(options);
       const temp = JSON.parse(options.isFocus);
@@ -265,12 +271,13 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
         v: common_vendor.unref(common_global.CommunityImgUrl) + "comments/xx3.png",
         w: common_vendor.t(AllCommentsCnt.value),
         x: common_vendor.o(($event) => isFocus.value = true),
-        y: common_vendor.unref(common_global.CommunityImgUrl) + "comments/zf.png",
-        z: common_vendor.t(detailObj.value.transfer),
-        A: isShow.value,
-        B: !isShow.value,
-        C: common_vendor.o(send),
-        D: common_vendor.s(styObj.value)
+        y: common_vendor.o(develop),
+        z: common_vendor.unref(common_global.CommunityImgUrl) + "comments/zf.png",
+        A: common_vendor.t(detailObj.value.transfer),
+        B: isShow.value,
+        C: !isShow.value,
+        D: common_vendor.o(send),
+        E: common_vendor.s(styObj.value)
       };
     };
   }

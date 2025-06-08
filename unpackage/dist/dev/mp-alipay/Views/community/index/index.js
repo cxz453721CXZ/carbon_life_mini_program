@@ -113,6 +113,12 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
           isUpvoteList.value[i] = upvoteState[0];
       }
     };
+    const develop = () => {
+      common_vendor.index.showToast({
+        title: "正在开发中",
+        icon: "exception"
+      });
+    };
     const upvote = async (upvoteIdVal, typeIdVal) => {
       if (userStore.user.id == "000000") {
         common_vendor.index.showToast({
@@ -207,8 +213,9 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
             o: index
           };
         }),
-        x: common_vendor.unref(common_global.CommunityImgUrl) + "index/zf.png",
-        y: common_vendor.unref(common_global.CommunityImgUrl) + "index/xx.png"
+        x: common_vendor.o(develop),
+        y: common_vendor.unref(common_global.CommunityImgUrl) + "index/zf.png",
+        z: common_vendor.unref(common_global.CommunityImgUrl) + "index/xx.png"
       };
     };
   }

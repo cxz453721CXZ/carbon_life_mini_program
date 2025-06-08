@@ -1,12 +1,12 @@
 <template>
 	<view class="flex-col page">
 	  <view class="flex-row justify-between group">
-	    <view class="flex-col justify-start items-center text-wrapper"><text class="font text">全部</text></view>
-	    <view class="flex-col justify-start items-center text-wrapper_2"><text class="font text_2">政策公告</text></view>
-	    <view class="flex-col justify-start items-center text-wrapper_2"><text class="font text_3">低碳宣传</text></view>
+	    <view @click="develop" class="flex-col justify-start items-center text-wrapper"><text class="font text">全部</text></view>
+	    <view @click="develop" class="flex-col justify-start items-center text-wrapper_2"><text class="font text_2">政策公告</text></view>
+	    <view @click="develop" class="flex-col justify-start items-center text-wrapper_2"><text class="font text_3">低碳宣传</text></view>
 	  </view>
 	  <view class="mt-22 flex-col">
-	    <view class="flex-row justify-center list-item mt-3" v-for="(item, index) in items" :key="index">
+	    <view @click="develop" class="flex-row justify-center list-item mt-3" v-for="(item, index) in items" :key="index">
 	      <image
 	        class="self-center image"
 	        :src="KnowledgeChallengeImgUrl + 'information/banner.png'"
@@ -24,6 +24,13 @@
 	import { KnowledgeChallengeImgUrl } from '../../../common/global';
 	import {ref} from 'vue'
 	const items = ref([null, null, null, null])
+	
+	const develop = () => {
+		uni.showToast({
+			title: '正在开发中',
+			icon: 'exception'
+		})
+	}
 </script>
 
 <style lang="scss" scoped>

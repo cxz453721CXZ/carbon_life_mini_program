@@ -86,7 +86,7 @@
 	          <view class="flex-row justify-between items-center self-stretch group_7 mt-12">
 	            <view class="flex-row items-center">
 	              <image
-	                class="shrink-0 image_7"
+	                class="shrink-0 image_7" @click="develop"
 	                :src="CommunityImgUrl + 'index/zf.png'"
 	              />
 	              <text class="font_4 ml-4">{{item.transfer}}</text>
@@ -251,6 +251,12 @@
 		}
 	}
 	
+	const develop = () => {
+		uni.showToast({
+			title: '正在开发中',
+			icon: 'exception'
+		})
+	}
 	
 	const upvote = async (upvoteIdVal:any, typeIdVal:any) => {
 		if(userStore.user.id == '000000'){

@@ -48,7 +48,7 @@
 	        :src="MyImgUrl + 'yjt.png'"
 	      />
 	    </view>
-	    <view class="flex-row justify-between items-center group_4">
+	    <view class="flex-row justify-between items-center group_4" @click="develop">
 	      <view class="flex-row items-center">
 	        <image
 	          class="shrink-0 image_2"
@@ -61,7 +61,7 @@
 	        :src="MyImgUrl + 'yjt.png'"
 	      />
 	    </view>
-	    <view class="flex-row justify-between items-center group_5">
+	    <view class="flex-row justify-between items-center group_5" @click="develop">
 	      <view class="flex-row items-center">
 	        <image
 	          class="shrink-0 image_2"
@@ -103,6 +103,13 @@
 	const name = ref('登录')
 	const points = ref(0)
 	const rank = ref(0)
+	
+	const develop = () => {
+		uni.showToast({
+			title: '正在开发中',
+			icon: 'exception'
+		})
+	}
 	
 	const testSession = async () => {
 		const res = await uni.request({

@@ -10,6 +10,12 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
     const name = common_vendor.ref("登录");
     const points = common_vendor.ref(0);
     const rank = common_vendor.ref(0);
+    const develop = () => {
+      common_vendor.index.showToast({
+        title: "正在开发中",
+        icon: "exception"
+      });
+    };
     common_vendor.onMounted(async () => {
       const response = await common_vendor.index.request({
         url: common_global.DomainName + "/test/session",
@@ -119,11 +125,13 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
         k: common_vendor.o(jumpToOrderDetail),
         l: common_vendor.unref(common_global.MyImgUrl) + "dz.png",
         m: common_vendor.unref(common_global.MyImgUrl) + "yjt.png",
-        n: common_vendor.unref(common_global.MyImgUrl) + "act.png",
-        o: common_vendor.unref(common_global.MyImgUrl) + "yjt.png",
-        p: common_vendor.unref(common_global.MyImgUrl) + "hs.png",
-        q: common_vendor.unref(common_global.MyImgUrl) + "yjt.png",
-        r: common_vendor.o(jumpToRecycle)
+        n: common_vendor.o(develop),
+        o: common_vendor.unref(common_global.MyImgUrl) + "act.png",
+        p: common_vendor.unref(common_global.MyImgUrl) + "yjt.png",
+        q: common_vendor.o(develop),
+        r: common_vendor.unref(common_global.MyImgUrl) + "hs.png",
+        s: common_vendor.unref(common_global.MyImgUrl) + "yjt.png",
+        t: common_vendor.o(jumpToRecycle)
       };
     };
   }

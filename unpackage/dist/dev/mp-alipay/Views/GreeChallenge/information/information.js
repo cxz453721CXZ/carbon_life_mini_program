@@ -5,14 +5,24 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
   __name: "information",
   setup(__props) {
     const items = common_vendor.ref([null, null, null, null]);
+    const develop = () => {
+      common_vendor.index.showToast({
+        title: "正在开发中",
+        icon: "exception"
+      });
+    };
     return (_ctx, _cache) => {
       return {
-        a: common_vendor.f(items.value, (item, index, i0) => {
+        a: common_vendor.o(develop),
+        b: common_vendor.o(develop),
+        c: common_vendor.o(develop),
+        d: common_vendor.f(items.value, (item, index, i0) => {
           return {
             a: index
           };
         }),
-        b: common_vendor.unref(common_global.KnowledgeChallengeImgUrl) + "information/banner.png"
+        e: common_vendor.unref(common_global.KnowledgeChallengeImgUrl) + "information/banner.png",
+        f: common_vendor.o(develop)
       };
     };
   }

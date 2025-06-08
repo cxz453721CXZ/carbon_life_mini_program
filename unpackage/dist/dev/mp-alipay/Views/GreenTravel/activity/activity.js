@@ -4,6 +4,12 @@ const common_global = require("../../../common/global.js");
 const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
   __name: "activity",
   setup(__props) {
+    const develop = () => {
+      common_vendor.index.showToast({
+        title: "正在开发中",
+        icon: "exception"
+      });
+    };
     return (_ctx, _cache) => {
       return {
         a: common_vendor.unref(common_global.GreenChallenageImgUrl) + "activity/didian.png",
@@ -14,7 +20,8 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
         f: common_vendor.unref(common_global.GreenChallenageImgUrl) + "activity/yjt.png",
         g: common_vendor.unref(common_global.GreenChallenageImgUrl) + "activity/zhixie.png",
         h: common_vendor.unref(common_global.GreenChallenageImgUrl) + "activity/activity.png",
-        i: common_vendor.unref(common_global.GreenChallenageImgUrl) + "activity/jf.png"
+        i: common_vendor.o(develop),
+        j: common_vendor.unref(common_global.GreenChallenageImgUrl) + "activity/jf.png"
       };
     };
   }

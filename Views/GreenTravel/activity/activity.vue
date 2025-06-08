@@ -107,7 +107,7 @@
 	      <text class="text_16">10</text>
 	      <text class="font_2 text_18 mt-11">可赚取碳积分</text>
 	    </view>
-	    <view class="flex-col justify-start items-center text-wrapper">
+	    <view @click="develop" class="flex-col justify-start items-center text-wrapper">
 	      <text class="font_5 text_17">上传参与凭证</text>
 	    </view>
 	    <image
@@ -120,6 +120,12 @@
 
 <script setup lang="ts">
 	import { GreenChallenageImgUrl } from '../../../common/global';
+	const develop = () => {
+		uni.showToast({
+			title: '正在开发中',
+			icon: 'exception'
+		})
+	}
 </script>
 
 <style lang="scss" scoped>

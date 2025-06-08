@@ -119,7 +119,7 @@
 	      </view>
 	      <view class="flex-row items-center group_23 ml-20">
 	        <image
-	          class="shrink-0 image_13"
+	          class="shrink-0 image_13" @click="develop"
 	          :src="CommunityImgUrl + 'comments/zf.png'"
 	        />
 	        <text class="font_9 ml-4">{{detailObj.transfer}}</text>
@@ -161,7 +161,12 @@
 	const isUpvoted = ref('')
 	const upvoteCnt = ref(0)
 	
-	
+	const develop = () => {
+		uni.showToast({
+			title: '正在开发中',
+			icon: 'exception'
+		})
+	}
 	
 	onLoad((options) => {
 		console.log(options)
