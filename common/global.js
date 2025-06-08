@@ -9,9 +9,9 @@ export const MyImgUrl = 'https://carbon2.obs.cn-north-4.myhuaweicloud.com/carbon
 
 const local = 'http://localhost:9090'
 const domain = 'https://www.carboner.cn'
-const ip = 'http://123.249.108.160:9090'
+const ip = 'http://1.94.237.210:9090'
 
  
-export const DomainName = ip
+export const DomainName = local
 
 

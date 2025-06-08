@@ -11,16 +11,9 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
     const points = common_vendor.ref(0);
     const rank = common_vendor.ref(0);
     common_vendor.onMounted(async () => {
-      const auth = await my.getAuthCode({
-        scopes: "auth_user"
-      });
-      console.log("-----------" + auth.authCode);
       const response = await common_vendor.index.request({
-        url: common_global.DomainName + "/test/queryUserInfo",
-        method: "GET",
-        data: {
-          openId: auth.authCode
-        }
+        url: common_global.DomainName + "/test/session",
+        method: "GET"
       });
       console.log(response);
       userStore.user = response.data.data;
@@ -54,7 +47,7 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
           openId
         }
       });
-      console.log(response);
+      console.log("===============>", response);
       userStore.user = response.data.data;
       avatar.value = userStore.user.avatar;
       name.value = userStore.user.name;

@@ -22,7 +22,13 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
     const secondUrl = common_vendor.ref(common_global.CommunityImgUrl + "index/jh2.png");
     const upvoteState = [common_global.CommunityImgUrl + "index/dz.png", common_global.CommunityImgUrl + "index/dzs.png"];
     const publishInfo = common_vendor.ref([]);
-    common_vendor.onMounted(() => {
+    common_vendor.onMounted(async () => {
+      const response = await common_vendor.index.request({
+        url: common_global.DomainName + "/test/session",
+        method: "GET"
+      });
+      console.log(response);
+      userStore.user = response.data.data;
       search();
     });
     common_vendor.onShow(() => {
@@ -108,6 +114,13 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
       }
     };
     const upvote = async (upvoteIdVal, typeIdVal) => {
+      if (userStore.user.id == "000000") {
+        common_vendor.index.showToast({
+          title: "请先登录",
+          icon: "fail"
+        });
+        return;
+      }
       const res = await common_vendor.index.request({
         url: common_global.DomainName + "/community/upvoteToCommentsOrPublish",
         method: "POST",

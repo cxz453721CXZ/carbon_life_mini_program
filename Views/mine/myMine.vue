@@ -89,6 +89,7 @@
 	    </view>
 	  </view>
 	</view>
+	<!-- <view @click="testSession">测试</view> -->
 </template>
 
 <script setup lang="ts">
@@ -102,18 +103,19 @@
 	const name = ref('登录')
 	const points = ref(0)
 	const rank = ref(0)
+	
+	const testSession = async () => {
+		const res = await uni.request({
+			url: DomainName + '/test/session',
+			method: 'GET'
+		}) 
+		console.log(res)
+	}
 
 	onMounted( async () => {
-		const auth = await my.getAuthCode({
-			scopes: 'auth_user',
-		}) 
-		console.log('-----------' + auth.authCode)
 		const response = await uni.request({
-			url: DomainName + '/test/queryUserInfo',
+			url: DomainName + '/test/session',
 			method: 'GET',
-			data: {
-				openId: auth.authCode
-			}
 		})
 		console.log(response); 
 		userStore.user = response.data.data
@@ -134,7 +136,7 @@
 
 	const login = async () => {
 		const auth = await my.getAuthCode({
-			scopes: 'auth_user',
+			scopes: 'auth_user'
 		}) 
 		const res = await uni.request({
 			url: DomainName + '/test/auth',
@@ -149,7 +151,7 @@
 				openId,
 			}
 		})
-		console.log(response)
+		console.log("===============>", response)
 		userStore.user = response.data.data
 		avatar.value = userStore.user.avatar
 		name.value = userStore.user.name

@@ -153,7 +153,13 @@
 		
 	const publishInfo = ref([])
 	
-	onMounted(() => {
+	onMounted( async () => {
+		const response = await uni.request({
+			url: DomainName + '/test/session',
+			method: 'GET',
+		})
+		console.log(response); 
+		userStore.user = response.data.data
 		search()
 	})
 	
@@ -247,6 +253,13 @@
 	
 	
 	const upvote = async (upvoteIdVal:any, typeIdVal:any) => {
+		if(userStore.user.id == '000000'){
+			uni.showToast({
+				title: '请先登录',
+				icon: 'fail'
+			})
+			return ;
+		}
 		const res = await uni.request({
 			url: DomainName + '/community/upvoteToCommentsOrPublish',
 			method: 'POST',

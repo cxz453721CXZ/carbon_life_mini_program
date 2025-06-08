@@ -39,8 +39,19 @@
     
     <script setup lang="ts">
 	
-	import { userInfoStore } from '../../store/user';
+	import { onMounted } from 'vue';
+import { userInfoStore } from '../../store/user';
+import { DomainName } from '../../common/global';
 	const userStore = userInfoStore()
+	
+	onMounted( async () => {
+		const response = await uni.request({
+			url: DomainName + '/test/session',
+			method: 'GET',
+		})
+		console.log(response); 
+		userStore.user = response.data.data
+	})
 	
     function jump(value:any){ 
 		if(value == '/Views/GreeChallenge/index/index'){

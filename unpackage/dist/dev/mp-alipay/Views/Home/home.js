@@ -6,6 +6,14 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
   __name: "home",
   setup(__props) {
     const userStore = store_user.userInfoStore();
+    common_vendor.onMounted(async () => {
+      const response = await common_vendor.index.request({
+        url: common_global.DomainName + "/test/session",
+        method: "GET"
+      });
+      console.log(response);
+      userStore.user = response.data.data;
+    });
     function jump(value) {
       if (value == "/Views/GreeChallenge/index/index") {
         if (userStore.user.id == "000000") {
