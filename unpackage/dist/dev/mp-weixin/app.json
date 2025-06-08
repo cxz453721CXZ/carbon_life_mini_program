@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "Views/Home/home",
+    "Views/GreenTravel/subway/subway",
+    "Views/GreenTravel/bicycle/bicycle",
+    "Views/GreenTravel/index/index",
+    "Views/community/index/index",
+    "Views/community/comments/comments",
+    "Views/community/publish/publish",
+    "Views/GreeChallenge/index/index",
+    "Views/GreeChallenge/information/information",
+    "Views/GreeChallenge/personRank/personRank",
+    "Views/GreeChallenge/checkIn/checkIn",
+    "Views/GreeChallenge/questionnaires/questionnaires",
+    "Views/GreeChallenge/answerGain/answerGain",
+    "Views/Page/pointsMall/pointsMall",
+    "Views/mine/myMine",
+    "Views/Page/payOrder/payOrder",
+    "Views/Page/saveAddress/saveAddress",
+    "Views/Page/orderDetail/orderDetail",
+    "Views/GreeChallenge/topicClass/topicClass",
+    "Views/GreenTravel/newEnergy/newEnergy",
+    "Views/GreenTravel/cleanPlate/cleanPlate",
+    "Views/GreenTravel/garbageSorting/garbageSorting",
+    "Views/GreenTravel/recycle/recycle",
+    "Views/GreenTravel/detail/detail",
+    "Views/GreenTravel/activity/activity",
+    "Views/GreenTravel/details/details",
+    "Views/donate/index/index",
+    "Views/donate/selectPeriod/selectPeriod",
+    "Views/donate/orderDetail/orderDetail",
+    "Views/donate/saveAddress/saveAddress"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#37C06B",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "selectedColor": "#37C06B",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "Views/Home/home",
+        "iconPath": "static/home.png",
+        "selectedIconPath": "static/homeS.png"
+      },
+      {
+        "text": "社区",
+        "pagePath": "Views/community/index/index",
+        "iconPath": "static/community.png",
+        "selectedIconPath": "static/communityS.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "Views/mine/myMine",
+        "iconPath": "static/mine.png",
+        "selectedIconPath": "static/mineS.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

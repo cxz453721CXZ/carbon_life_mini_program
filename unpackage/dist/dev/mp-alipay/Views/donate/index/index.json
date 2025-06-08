@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "上门回收",
+  "usingComponents": {
+    "uni-popup": "../../../uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "address-vue": "../component/address",
+    "popup-vue": "../component/popup"
+  }
+}

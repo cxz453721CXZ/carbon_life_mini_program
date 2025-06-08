@@ -1,0 +1,248 @@
+{
+		"pages": [
+			{
+				"path": "Views/Home/home", 
+				"style": { 
+					"navigationBarTitleText": "首页"
+				}
+			},
+			{
+				"path" : "Views/GreenTravel/subway/subway",
+				"style" : 
+				{
+					"navigationBarTitleText" : ""
+				}
+			},
+			{
+				"path" : "Views/GreenTravel/bicycle/bicycle",
+				"style" : 
+				{
+					"navigationBarTitleText" : ""
+				}
+			},
+			{
+				"path" : "Views/GreenTravel/index/index",
+				"style" : 
+				{
+					"navigationBarTitleText" : ""
+				}
+			},
+			{
+				"path" : "Views/community/index/index",
+				"style" : 
+				{
+					"navigationBarTitleText" : "低碳社区",
+					"navigationBarBackgroundColor": "#fff"
+				}
+			},
+			{
+				"path" : "Views/community/comments/comments",
+				"style" : 
+				{
+					"navigationBarTitleText" : "",
+					"navigationBarBackgroundColor": "#fff"
+				}
+			},
+			{
+				"path" : "Views/community/publish/publish",
+				"style" : 
+				{
+					"navigationBarTitleText" : "发布",
+					"navigationBarBackgroundColor": "#fff"
+				}
+			},
+			{
+				"path" : "Views/GreeChallenge/index/index",
+				"style" : 
+				{
+					"navigationBarTitleText" : ""
+				}
+			}, 
+			{
+				"path" : "Views/GreeChallenge/information/information",
+				"style" : 
+				{
+					"navigationBarTitleText" : ""
+				}
+			},
+			{
+				"path" : "Views/GreeChallenge/personRank/personRank",
+				"style" : 
+				{
+					"navigationBarTitleText" : ""
+				}
+			},
+			{
+				"path" : "Views/GreeChallenge/checkIn/checkIn",
+				"style" : 
+				{
+					"navigationBarTitleText" : ""
+				}
+			},
+			{
+				"path" : "Views/GreeChallenge/questionnaires/questionnaires",
+				"style" : 
+				{
+					"navigationBarTitleText" : ""
+				}
+			},
+			{
+				"path" : "Views/GreeChallenge/answerGain/answerGain",
+				"style" : 
+				{
+					"navigationBarTitleText" : ""
+				}
+			}, 
+			
+			{
+				"path" : "Views/Page/pointsMall/pointsMall",
+				"style" : 
+				{
+					"navigationBarTitleText" : ""
+				}
+			},
+		{
+			"path" : "Views/mine/myMine",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的",
+				"navigationBarBackgroundColor": "#20C6A0"
+			}
+		},
+		{
+			"path" : "Views/Page/payOrder/payOrder",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "Views/Page/saveAddress/saveAddress",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "Views/Page/orderDetail/orderDetail",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "Views/GreeChallenge/topicClass/topicClass",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "Views/GreenTravel/newEnergy/newEnergy",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "Views/GreenTravel/cleanPlate/cleanPlate",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "Views/GreenTravel/garbageSorting/garbageSorting",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "Views/GreenTravel/recycle/recycle",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "Views/GreenTravel/detail/detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "Views/GreenTravel/activity/activity",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "Views/GreenTravel/details/details",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "Views/donate/index/index",
+			"style" : 
+			{
+				"navigationBarTitleText" : "上门回收"
+			}
+		},
+		{
+			"path" : "Views/donate/selectPeriod/selectPeriod",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "Views/donate/orderDetail/orderDetail",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "Views/donate/saveAddress/saveAddress",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app", 
+		"navigationBarBackgroundColor": "#37C06B",
+		"backgroundColor": "#F8F8F8"
+		
+	},
+	"tabBar": {
+			"selectedColor": "#37C06B",
+			"fontSize": "100px",
+			"list": [  
+			   { 
+				   "text":"首页",  
+				   "pagePath": "Views/Home/home",
+				   "iconPath": "static/home.png",
+				   "selectedIconPath": "static/homeS.png"
+			   },
+			   {
+				   "text": "社区",
+				   "pagePath": "Views/community/index/index",
+				    "iconPath": "static/community.png"  ,
+					"selectedIconPath": "static/communityS.png"
+			   },
+			   {
+			   	   "text": "我的", 
+			   	   "pagePath": "Views/mine/myMine",
+				    "iconPath": "static/mine.png",
+					"selectedIconPath": "static/mineS.png"
+			   }
+		]}
+	}

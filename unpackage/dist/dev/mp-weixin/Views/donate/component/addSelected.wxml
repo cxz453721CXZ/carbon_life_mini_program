@@ -1,0 +1,1 @@
+<view class="data-v-a9f75602"><uni-data-picker wx:if="{{f}}" class="data-v-a9f75602" u-s="{{['d']}}" bindchange="{{d}}" bindnodeclick="{{e}}" u-i="a9f75602-0" bind:__l="__l" u-p="{{f}}"><view wx:for="{{a}}" wx:for-item="v0" wx:key="a" slot="{{v0.b}}"><view class="picker data-v-a9f75602" style="{{c}}">{{b}}</view></view></uni-data-picker></view>

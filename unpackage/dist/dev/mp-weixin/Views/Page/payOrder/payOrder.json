@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "uni-popup": "../../../uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "address-vue": "../component/address",
+    "popup-vue": "../component/popup",
+    "change-vue": "../component/change",
+    "c-popup-vue": "../component/cPopup",
+    "change-success-vue": "../component/changeSuccess"
+  }
+}

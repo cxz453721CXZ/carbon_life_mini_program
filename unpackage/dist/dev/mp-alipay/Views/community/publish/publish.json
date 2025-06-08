@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "发布",
+  "titleBarColor": "#fff",
+  "usingComponents": {
+    "uni-file-picker3": "../../../uni_modules/uni-file-picker3/components/uni-file-picker3/uni-file-picker3"
+  }
+}

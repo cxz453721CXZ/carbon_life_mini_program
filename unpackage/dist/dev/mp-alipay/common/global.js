@@ -1,0 +1,18 @@
+"use strict";
+const PointsMallImgUrl = "https://carbon2.obs.cn-north-4.myhuaweicloud.com/carbon-life-static/PointsMall/";
+const KnowledgeChallengeImgUrl = "https://carbon2.obs.cn-north-4.myhuaweicloud.com/carbon-life-static/KnowledgeChallenge/";
+const GreenChallenageImgUrl = "https://carbon2.obs.cn-north-4.myhuaweicloud.com/carbon-life-static/GreenChallenge/";
+const CommunityImgUrl = "https://carbon2.obs.cn-north-4.myhuaweicloud.com/carbon-life-static/community/";
+const HomeImgUrl = "https://carbon2.obs.cn-north-4.myhuaweicloud.com/carbon-life-static/Home/home/";
+const DonateImgUrl = "https://carbon2.obs.cn-north-4.myhuaweicloud.com/carbon-life-static/donate/";
+const MyImgUrl = "https://carbon2.obs.cn-north-4.myhuaweicloud.com/carbon-life-static/my/";
+const ip = "http://123.249.108.160:9090";
+const DomainName = ip;
+exports.CommunityImgUrl = CommunityImgUrl;
+exports.DomainName = DomainName;
+exports.DonateImgUrl = DonateImgUrl;
+exports.GreenChallenageImgUrl = GreenChallenageImgUrl;
+exports.HomeImgUrl = HomeImgUrl;
+exports.KnowledgeChallengeImgUrl = KnowledgeChallengeImgUrl;
+exports.MyImgUrl = MyImgUrl;
+exports.PointsMallImgUrl = PointsMallImgUrl;

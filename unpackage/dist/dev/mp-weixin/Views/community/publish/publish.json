@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "发布",
+  "navigationBarBackgroundColor": "#fff",
+  "usingComponents": {
+    "uni-file-picker3": "../../../uni_modules/uni-file-picker3/components/uni-file-picker3/uni-file-picker3"
+  }
+}

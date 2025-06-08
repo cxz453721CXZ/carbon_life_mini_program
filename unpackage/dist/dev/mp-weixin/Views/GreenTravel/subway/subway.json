@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "subway-vue": "../component/subway",
+    "bus-vue": "../component/bus"
+  }
+}

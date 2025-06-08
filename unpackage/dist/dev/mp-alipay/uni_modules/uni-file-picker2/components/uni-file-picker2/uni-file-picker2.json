@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "styleIsolation": "apply-shared",
+  "usingComponents": {
+    "upload-image": "./upload-image",
+    "upload-file": "./upload-file"
+  }
+}

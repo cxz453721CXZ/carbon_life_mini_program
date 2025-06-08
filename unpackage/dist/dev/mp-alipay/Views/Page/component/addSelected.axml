@@ -1,0 +1,1 @@
+<view class="data-v-b84f0e91"><uni-data-picker class="data-v-b84f0e91" u-s="{{['d']}}" onChange="{{d}}" onNodeclick="{{e}}" u-i="b84f0e91-0" onVI="__l" u-p="{{f}}"><view a:for="{{a}}" a:for-item="v0" a:key="a" slot="{{v0.b}}"><view class="picker data-v-b84f0e91" style="{{c}}">{{b}}</view></view></uni-data-picker></view>

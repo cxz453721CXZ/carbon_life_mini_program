@@ -1,0 +1,61 @@
+.insertContent {
+  width: 135px;
+  font-size: 20px;
+  margin: 5px 0 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.insertContent .mark {
+  height: 20px;
+  width: 5px;
+  background-color: seagreen;
+}
+.main-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200rpx;
+  text-align: center;
+}
+.notice {
+  width: 100%;
+  background: white;
+  line-height: 50rpx;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  background-color: rgba(255, 255, 255, 0);
+}
+.notice .ca {
+  position: absolute;
+  left: 40px;
+  top: 5px;
+  font-size: 20px;
+}
+.Eight {
+  margin-top: 13px;
+  border-top: 1px solid #2c2c2c;
+  border-radius: 20px;
+  z-index: 80;
+  padding-top: 10px;
+  background-color: white;
+}
+.essay {
+  height: 450rpx;
+  width: 320rpx;
+  border-radius: 20px;
+  margin: 10px;
+  float: left;
+  border: 1px solid #d2d2d2;
+  font-size: 13px;
+  text-align: center;
+}
+.essay image {
+  height: 300rpx;
+  width: 270rpx;
+  margin: 25rpx;
+}
+.tag-g {
+  font-size: 15px;
+}

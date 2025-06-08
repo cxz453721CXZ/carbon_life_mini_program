@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "",
+  "usingComponents": {
+    "bike-vue": "../component/bike",
+    "electrocar-vue": "../component/electrocar"
+  }
+}

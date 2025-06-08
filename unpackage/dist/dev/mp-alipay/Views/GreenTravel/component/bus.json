@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "styleIsolation": "apply-shared",
+  "usingComponents": {
+    "uni-file-picker2": "../../../uni_modules/uni-file-picker2/components/uni-file-picker2/uni-file-picker2"
+  }
+}
