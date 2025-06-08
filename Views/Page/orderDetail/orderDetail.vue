@@ -1,6 +1,7 @@
 <template>
 	<view class="flex-col justify-start page">
 	  <view class="flex-col list">
+		<view style="text-align: center;" v-if="orderList.length === 0">暂无订单</view>
 	    <view class="flex-col list-item mt-21" v-for="(item, index) in orderList" :key="index">
 	      <view class="flex-col">
 	        <view class="flex-row justify-center items-center list-item_2">

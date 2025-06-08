@@ -22,8 +22,10 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
       }
     });
     return (_ctx, _cache) => {
-      return {
-        a: common_vendor.f(orderList.value, (item, index, i0) => {
+      return common_vendor.e({
+        a: orderList.value.length === 0
+      }, orderList.value.length === 0 ? {} : {}, {
+        b: common_vendor.f(orderList.value, (item, index, i0) => {
           return {
             a: item.url,
             b: common_vendor.t(item.name),
@@ -38,7 +40,7 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
             k: index
           };
         })
-      };
+      });
     };
   }
 });
