@@ -1,6 +1,6 @@
 <template>
 	<view class="flex-col page">
-	  <view @click="share" class="flex-col justify-start items-center text-wrapper_3">
+	  <view @click="develop" class="flex-col justify-start items-center text-wrapper_3">
 		  <text class="font_6 text_20">立即邀请</text>
 	 </view>
 	  <view class="flex-col relative section">
@@ -144,7 +144,12 @@
 	
 	const isSign = ref(false)
 	
-	
+	const develop = () => {
+		uni.showToast({
+			title: '正在开发中',
+			icon: 'exception'
+		})
+	}
 	
 	const add = async () => {
 		const res3 = await uni.request({

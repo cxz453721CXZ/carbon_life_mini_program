@@ -29,6 +29,12 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
     const title1 = common_vendor.ref("去答题");
     const title2 = common_vendor.ref("去答题");
     const isSign = common_vendor.ref(false);
+    const develop = () => {
+      common_vendor.index.showToast({
+        title: "正在开发中",
+        icon: "exception"
+      });
+    };
     const add = async () => {
       const res3 = await common_vendor.index.request({
         url: common_global.DomainName + "/knowledge/selectSignDayCnt",
@@ -183,8 +189,6 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
         url: "../questionnaires/questionnaires?id=" + val
       });
     };
-    const share = () => {
-    };
     const getDate = () => {
       let now = /* @__PURE__ */ new Date();
       let year = now.getFullYear();
@@ -194,7 +198,7 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
     };
     return (_ctx, _cache) => {
       return {
-        a: common_vendor.o(share),
+        a: common_vendor.o(develop),
         b: common_vendor.unref(common_global.KnowledgeChallengeImgUrl) + "checkIn/sl.png",
         c: common_vendor.t(continueSign.value),
         d: common_vendor.t(totalSign.value),
